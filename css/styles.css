@@ -1,0 +1,294 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/*radio para imagenes redondas*/
+.radio{
+    border-radius: 50%;
+}
+/*/background pagina de enviado*/
+.background{
+    background-image: url(../img/mar.png);
+}
+.background2{
+    background-attachment: fixed;
+    background-image: url(../img/bosque2.png);
+}
+/*cosas generales*/
+p{
+    font-size: 1.4em;
+}
+h3{
+    font-size: 1.4em;
+}
+img{
+    width: 100%;
+}
+a{
+    font-size: 1.2em;
+}
+.boldear{
+    font-weight: bold;
+}
+.row1{
+    text-align: right;
+    padding: 2em;
+}
+h1{
+    font-weight: bold;
+    font-size: 3em;
+}
+h2{
+    color: rgb(0, 0, 0);
+    font-size: 1.8em;
+    margin-bottom: -0.2em;
+}
+.col2 p{
+    font-size: 1.2em;
+}
+/*cosas del menu desplegable*/
+.menu{
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px white solid;
+    overflow: hidden;
+}
+.menu a{
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.9em 0em;
+    display: block;
+}
+.activado{
+    background-image: url(../img/fondo.png);
+    border-left: 2px white solid;
+    border-right: 2px white solid;
+}
+h3 i{
+    font-size: 2em;
+}
+.menu a:hover{
+    background-color: gray;
+}
+.menu-icon{
+    display: none;
+    font-size: 2em;
+    padding: 1rem 1rem;
+    text-align: left;
+    cursor: pointer;
+    color: white;
+}
+.menu-items{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    flex-direction: row;
+}
+.menu-items li {
+    flex: 1; 
+}
+
+#menu-toggle{
+    display: none;
+}
+/*fin cosas del menu desplegable*/
+/*columnas del mapa y el primer parrafo del inicio*/
+.col2{
+    padding-top: 0.5em;
+    width: 35%;
+    display: inline-block;
+    text-align: left;
+    padding-left: 2em;
+    padding-right: 6em;
+}
+/*imagen de paimon*/
+.img{
+    width: 40%;
+    border-radius: 50%;
+}
+/*columnas de la parte de personajes y de plataformas*/
+.colum2{
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    padding-left: 2em
+}
+h4{
+    font-size: 1.3em;
+}
+.imagenes{
+    width: 30%;
+    display: inline-block;
+}
+.Historia{
+    font-size: 1.2em;
+    text-align: center;
+}
+/*columnas final de inicio*/
+.columnas2{
+    padding: 2em;
+    width: 60%;
+    display: inline-block;
+}
+/*configuracion botones*/
+button{
+    padding: 1.2em 3em;
+    border-radius: 20%;
+    font-weight: bold;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+button:hover{
+    background-color: gray;
+}
+/*cosas en blanco*/
+.blanco{
+    color: white;
+}
+/*imagen flotante en la pagina de paimon*/
+.paimonmover{
+    position: fixed;
+    bottom: 0;
+    width: 5%;
+}
+.paimon{
+    text-align: left;
+}
+/*cosas gacha*/
+.columnasgacha2{
+    width: 40%;
+    display: inline-block;
+    padding-top: 1em;
+}
+.fondogacha h2{
+    padding-bottom: 1em;
+}
+/* columna de personajes en eventos y noticias*/
+.col1{
+    width: 70%;
+    display: inline-block;
+
+}
+/*imagen eventos y noticias arconte*/
+.mavuika{
+    padding-left: 31em;
+    width: 48%;
+}
+/*footers*/
+.footercel{ 
+    display: none;
+    background-color: black;
+    color: whitesmoke;
+    width: 100%; 
+}
+footer{
+    padding-left: 25em;
+    text-align: left;
+    background-color: black;;
+    color: whitesmoke
+}
+.columnasfooter{
+    width: 30%;
+    display: inline-block;
+}
+/*tabla*/
+table{
+    background-color: whitesmoke;
+    border: 2px black solid;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+    border-collapse: collapse;
+}
+thead th{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+tbody tr:nth-child(even){
+    background-color: gray;
+}
+tbody th:nth-child(odd){
+    background-color: beige;
+}
+@media screen and (min-width:600px) and (max-width:1000px){
+    footer{
+        display: none;
+    }
+    .footercel{
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+    .columnasfooter{
+        width: 42%;
+        display: inline-block;
+        margin-left: -20em;
+    }
+    .col2{
+        width: 98%;
+        padding: 1em;
+    }
+    .img{
+        display: none;
+    }
+    .mavuika{
+        text-align: center;
+        padding: 1em;
+        width: 95%;
+    }
+    .col1{
+        padding-top: 10em;
+    }
+    .imagenes{
+        width: 40%;
+    }
+}
+@media screen and (max-width:600px) {
+    .menu-items{
+        flex-direction: column; 
+        display: none; 
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menu-toggle:checked + .menu-icon + .menu-items{
+        display: flex;
+    }
+    footer{
+        display: none;
+        text-align: center;
+    }
+    .footercel{
+        display: block;
+        width: 98%;
+        padding: 0.3em;
+    }
+    .col2{
+        width: 96%;
+        padding: 0.2em;
+    }
+    .img{
+        display: none;
+    }
+    .mavuika{
+        padding: 1em;
+        width: 90%;
+    }
+    .col1{
+        padding-bottom: 0;
+    }
+    .imagenes{
+        width: 40%;
+    }
+    .colum2{
+        width: 90%;
+        display: inline-block;
+    }
+    .columnasgacha2{
+        width: 90%;
+    }
+}

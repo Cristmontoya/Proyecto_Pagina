@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Genshin</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link class="radio" rel="shortcut icon" href="img/logo.jpg">
+</head>
+<body class="background2">
+    <nav class="menu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu-items">
+            <li><a href="index.html" class="activado">Inicio</a></li>
+            <li><a href="mapa.html">Regiones-Mapa</a></li>
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="eventos_noticias.html">Eventos-Noticias</a></li>
+            <li><a href="gachapon.html">Gachapon</a></li>
+        </ul>
+    </nav>
+    <section class="row1">
+        <div class="col2">
+            <h1>Guia Genshin Impact</h1>
+            <h2>Reacciones</h2>
+            <br>
+            <p class="boldear">En Genshin Impact, las reacciones elementales son fundamentales para maximizar el daño
+                 y mejorar la estrategia en combate. Estas reacciones se producen cuando los elementos Pyro,
+                  Hydro, Electro, Cryo y Geo interactúan entre sí. Por ejemplo, Combustión se genera al 
+                  combinar Pyro con Geo, causando una explosión, mientras que Cristalización ocurre cuando
+                   Geo se mezcla con otros elementos, creando cristales que otorgan resistencia. Electrificación
+                    resulta de la combinación de Electro y Hydro, infligiendo daño eléctrico, y Congelación se
+                     produce al combinar Cryo con Hydro, congelando enemigos. Vaporizar aumenta el daño Pyro o 
+                     Hydro dependiendo del orden de aplicación, y Sobrecarga crea una explosión eléctrica con Electro y Hydro. Finalmente, 
+                     Fusión y Desintegración son combinaciones avanzadas que producen efectos adicionales y son útiles en situaciones específicas.
+                      Masterizar estas reacciones es clave para optimizar el rendimiento en el juego.</p>
+            <button><a href="personajes.html">Volver</a></button>
+        </div>
+        <div class="col2" class="moverr"><img class="img" src="img/logo.jpg" alt=""></div>
+    </section>
+
+    <section>
+        <div class="col2">
+            <h2>Tabla de reacciones</h2>
+            <table class="border">
+                <thead>
+                    <tr>
+                        <th>Elemento 1</th>
+                        <th>Elemento 2</th>
+                        <th>Reaccion</th>
+                        <th>Efecto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border">
+                        <td>Pyro</td>
+                        <td>Geo</td>
+                        <td>Combustion (Explosion)</td>
+                        <td>Causa una explosión de daño Pyro adicional. Puede destruir escudos Geo enemigos.</td>
+                    </tr>
+                    <tr>
+                        <td>Geo</td>
+                        <td>Otro</td>
+                        <td>Cristalización</td>
+                        <td>Genera un cristal de elemento Geo que puede ser recogido para obtener una resistencia temporal al elemento con el que interactuó 
+                            (Cryo, Pyro, Electro, o Hydro)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Electro</td>
+                        <td>Hydro</td>
+                        <td>Electrificación</td>
+                        <td>Causa daño Electro adicional y puede aplicar un efecto de sobrecarga en el enemigo, infligiendo daño continuo de Electro</td>
+                    </tr>
+                    <tr>
+                        <td>Pyro</td>
+                        <td>Hydro</td>
+                        <td>Vaporizacion</td>
+                        <td>Causa daño adicional basado en Pyro o Hydro, dependiendo de cuál de los dos elementos fue aplicado primero. El daño es mayor si Pyro se aplica después de Hydro.</td>
+                    </tr>
+                    <tr>
+                        <td>Electro</td>
+                        <td>Hydro</td>
+                        <td>Sobrecarga</td>
+                        <td> Causa una explosión de daño Electro que afecta a los enemigos cercanos y puede aplicar un estado de quemadura.</td>
+                    </tr>
+                    <tr>
+                        <td>Cryo</td>
+                        <td>Hydro</td>
+                        <td>Congelación</td>
+                        <td>Congela al objetivo, deteniéndolo temporalmente y causando daño Cryo. Los enemigos congelados son vulnerables a ataques adicionales.</td>
+                    </tr>
+                    <tr>
+                        <td>Pyro</td>
+                        <td>Cryo</td>
+                        <td>Fusión</td>
+                        <td>Causa una reacción que inflige daño Pyro adicional. Los enemigos afectados reciben más daño de ataques Pyro.</td>
+                    </tr>
+                    <tr>
+                        <td>Pyro</td>
+                        <td>Cryo+Geo</td>
+                        <td>Desintegración</td>
+                        <td>Produce una reacción potente que combina los efectos de los tres elementos, causando daño adicional significativo.</td>
+                    </tr>
+                </tbody>
+            </table></div>
+    </section>
+    <footer>
+        <div class="columnasfooter">
+            <h2 class="blanco">¿Necesitas ayuda?</h2>
+            <br>
+            <p class="blanco">Completa la siguiente informacion con tus datos</p>
+            <br>
+            <label for="UID">UID del usuario</label>
+            <input type="number" id="UID">
+            <br>
+            <label for="servidor">Servidor de la cuenta</label>
+            <select name="servidor" id="servidor">
+                <option value="America">America</option>
+                <option value="Europa">Europa</option>
+                <option value="Asia">Asia</option>
+            </select>
+            <br>
+            <label for="rango">Rango de aventura</label>
+            <input type="number" id="rango">
+            <br>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+            <br>
+            <label for="numero">Numero de contacto</label>
+            <input type="number" id="celular">
+            <br>
+            <button><a href="enviado.html">Enviar</a></button></div>
+        </div>
+        <div class="columnasfooter"><img src="img/hoyoverse.png" alt=""></div>
+
+    </footer>
+<div class="paimon">
+<img class="paimonmover"src="img/paimonmover.png" alt="">
+</div>
+
+
+
+
+
+
+<footer class="footercel">
+    <h2 class="blanco">¿Necesitas ayuda?</h2>
+        <br>
+        <p class="blanco">Completa la siguiente informacion con tus datos</p>
+        <br>
+        <label for="UID">UID del usuario</label>
+        <input type="number" id="UID">
+        <br>
+        <label for="servidor">Servidor de la cuenta</label>
+        <select name="servidor" id="servidor">
+            <option value="America">America</option>
+            <option value="Europa">Europa</option>
+            <option value="Asia">Asia</option>
+        </select>
+        <br>
+        <label for="rango">Rango de aventura</label>
+        <input type="number" id="rango">
+        <br>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+        <br>
+        <label for="numero">Numero de contacto</label>
+        <input type="number" id="celular">
+        <br>
+        <button><a href="enviado.html">Enviar</a></button></div>
+</footer>
+</body>
+</html>
+</body>
+</html>
